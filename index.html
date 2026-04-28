@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharlika Delight's</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+    <img src="logo.png" alt="Company Name Logo">
+</a>
+
+            <button class="burger" id="burger-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact" class="btn-contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <span class="hero-subtitle">Premium Experience</span>
+        <h1 class="hero-title">Gintong <span>Sarap </span></h1>
+        <p class="hero-description">
+           Gintong Sarap offers premium Filipino treats crafted from traditional recipes, elevating native flavors into a rich and elegant experience inspired by heritage and culture.
+        </p>
+        <div class="hero-btns">
+            <a href="#products" class="btn-primary">Explore More</a>
+            <a href="#about" class="btn-secondary">Watch Story</a>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+    </div>
+</section>
+    
+<section class="about" id="about">
+  <div class="about-inner">
+ 
+    <!-- LEFT: MEDIA -->
+    <div class="about-media">
+ 
+      <!-- Primary video frame — self-contained, badge inset inside -->
+      <div class="video-frame">
+        <video autoplay muted loop playsinline>
+          <source src="foods.mp4" type="video/mp4"/>
+        </video>
+       
+      </div>
+ 
+      <!-- Secondary image — flows naturally below, offset to right -->
+      <div class="secondary-img-wrap">
+        <img src="p1.jpg" alt="Traditional Filipino Craft"/>
+      </div>
+ 
+    </div>
+ 
+    <!-- RIGHT: TEXT -->
+    <div class="about-text">
+ 
+      <span class="section-eyebrow">Our Heritage</span>
+ 
+      <h2 class="about-heading">
+        A Legacy of<br/>
+        <em>Gintong Craftsmanship</em>
+      </h2>
+ 
+      <p class="about-body">
+        Born from a passion for preserving the richness of Filipino flavors, Gintong Sarap is more than just a treat — it is a celebration of culture. We meticulously source local ingredients to recreate the nostalgic warmth of home, refined for the most discerning modern palate.
+      </p>
+ 
+      <!-- Feature Grid -->
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="fi-icon">🌿</div>
+          <div class="fi-text">
+            <h4>Authentic Roots</h4>
+            <p>Traditional recipes passed down through generations of Filipino matriarchs.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="fi-icon">✦</div>
+          <div class="fi-text">
+            <h4>Premium Quality</h4>
+            <p>Hand-crafted in small batches with the finest locally sourced ingredients.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="fi-icon">🏅</div>
+          <div class="fi-text">
+            <h4>Award-Winning</h4>
+            <p>Recognized across Philippine culinary heritage and luxury food circles.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="fi-icon">🌾</div>
+          <div class="fi-text">
+            <h4>Farm to Table</h4>
+            <p>Directly partnered with local farmers across the Philippine archipelago.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Founder Quote -->
+      <div class="founder-note">
+        <span class="quote-mark">"</span>
+        <p class="quote-text">
+          Every bite carries the memory of our lola's kitchen — the smoke, the sweetness, the love. We simply gave it the elegance it always deserved.
+        </p>
+        <span class="quote-attr">— Marisol Reyes-Santos, Founder</span>
+      </div>
+ 
+     
+ 
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 110" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"   stop-color="#0A0704"/>
+        <stop offset="35%"  stop-color="#110E08"/>
+        <stop offset="65%"  stop-color="#110E08"/>
+        <stop offset="100%" stop-color="#221A0F"/>
+      </linearGradient>
+      <!-- subtle gold shimmer on wave path -->
+      <linearGradient id="goldShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"   stop-color="#110E08" stop-opacity="1"/>
+        <stop offset="30%"  stop-color="#1C1710" stop-opacity="1"/>
+        <stop offset="50%"  stop-color="#2A1F0E" stop-opacity="1"/>
+        <stop offset="70%"  stop-color="#1C1710" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#221A0F" stop-opacity="1"/>
+      </linearGradient>
+    </defs>
+ 
+    <!-- Background fill (from above section color to products section color) -->
+    <path
+      d="M0,0 L1440,0 L1440,110 L0,110 Z"
+      fill="url(#waveGrad)"
+    />
+    <!-- Main wave shape -->
+    <path
+      d="M0,28
+         C120,28 180,72 300,72
+         C420,72 480,28 600,28
+         C720,28 780,72 900,72
+         C1020,72 1080,28 1200,28
+         C1320,28 1380,56 1440,56
+         L1440,110 L0,110 Z"
+      fill="url(#goldShimmer)"
+    />
+    <!-- Gold accent stroke on wave crest -->
+    <path
+      d="M0,28
+         C120,28 180,72 300,72
+         C420,72 480,28 600,28
+         C720,28 780,72 900,72
+         C1020,72 1080,28 1200,28
+         C1320,28 1380,56 1440,56"
+      fill="none"
+      stroke="rgba(200,169,110,0.45)"
+      stroke-width="1"
+    />
+    <!-- Secondary faint wave -->
+    <path
+      d="M0,50
+         C180,50 240,90 400,90
+         C560,90 620,50 780,50
+         C940,50 1000,90 1160,90
+         C1280,90 1360,65 1440,65
+         L1440,110 L0,110 Z"
+      fill="rgba(200,169,110,0.03)"
+    />
+  </svg>
+ 
+  <!-- Centred ornament -->
+  <div class="wave-ornament">
+    <div class="wave-ornament-line"></div>
+    <div class="wave-ornament-diamond"></div>
+    <span class="wave-ornament-text">Artisan Collection</span>
+    <div class="wave-ornament-diamond"></div>
+    <div class="wave-ornament-line"></div>
+  </div>
+</div>
+
+<section class="products-section" id="products">
+ 
+  <div class="products-header">
+    <span class="section-eyebrow">Curated Selection</span>
+    <h2 class="products-title">
+      Our <em>Golden</em> Collection
+    </h2>
+    <p class="products-subtitle">
+      Each creation is a love letter to Filipino heritage — handcrafted in small batches and bursting with ancestral flavour.
+    </p>
+  </div>
+ 
+  <!-- Filter tabs -->
+  <div class="products-filters">
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">Kakanin</button>
+    <button class="filter-btn">Chocolates</button>
+    <button class="filter-btn">Preserves</button>
+    <button class="filter-btn">Gift Sets</button>
+  </div>
+ 
+  <!-- Editorial 12-col product grid -->
+  <div class="products-grid">
+ 
+    <!-- Card 1 — Hero wide card -->
+    <div class="product-card">
+      <div class="card-visual">
+        <img src="cacao.jpg" alt="Cacao de Batangas"/>
+        <span class="card-badge badge-gold">Bestseller</span>
+      </div>
+      <div class="card-body">
+        <p class="card-category">Signature Chocolate</p>
+        <h3 class="card-name">Cacao de Batangas — Gold Reserve</h3>
+        <p class="card-desc">Single-origin Philippine cacao hand-tempered with pandan, salted carabao milk, and a whisper of tablea. Presented in a hand-lacquered collectors' box.</p>
+        <div class="card-footer">
+          
+          <button class="card-btn" onclick="addToCart(this)">
+            Add <span class="card-btn-icon">→</span>
+          </button>
+        </div>
+      </div>
+      <div class="card-hover-reveal">
+        <p class="reveal-title">Cacao de Batangas</p>
+        <p class="reveal-detail">Single-origin · Batangas Province · Small-batch · Hand-tempered · Collector's packaging</p>
+        <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
+      </div>
+    </div>
+ 
+    <!-- Card 2 -->
+    <div class="product-card">
+      <div class="card-visual">
+       <img src="lecheisplan.jpg" alt="Leche Flan Imperial"/>
+        <span class="card-badge badge-dark">Heritage</span>
+      </div>
+      <div class="card-body">
+        <p class="card-category">Heritage Kakanin</p>
+        <h3 class="card-name">Leche Flan Imperial</h3>
+        <p class="card-desc">Rich egg custard crowned with amber caramel, made with free-range eggs and pure carabao milk.</p>
+        <div class="card-footer">
+          
+          <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+        </div>
+      </div>
+      <div class="card-hover-reveal">
+        <p class="reveal-title">Leche Flan Imperial</p>
+        <p class="reveal-detail">Carabao milk · Free-range eggs · Amber caramel · Slow-cooked tradition</p>
+        <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
+      </div>
+    </div>
+ 
+    <!-- Card 3 -->
+    <div class="product-card">
+      <div class="card-visual">
+       <img src="pinat.jpg" alt="Peanut Brittle de Oro"/>
+        <span class="card-badge badge-gold">New</span>
+      </div>
+      <div class="card-body">
+        <p class="card-category">Artisan Confections</p>
+        <h3 class="card-name">Peanut Brittle de Oro</h3>
+        <p class="card-desc">Heirloom peanuts slow-cooked in raw cane sugar, finished with Himalayan pink salt.</p>
+        <div class="card-footer">
+         
+          <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+        </div>
+      </div>
+      <div class="card-hover-reveal">
+        <p class="reveal-title">Peanut Brittle de Oro</p>
+        <p class="reveal-detail">Pangasinan peanuts · Raw cane sugar · Pink salt finish · Heritage tin</p>
+        <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
+      </div>
+    </div>
+ 
+    <!-- Card 4 -->
+    <div class="product-card">
+      <div class="card-visual">
+       <img src="bibingks.jpg" alt="Bibingka Royale"/>
+        <span class="card-badge badge-dark">Bestseller</span>
+      </div>
+      <div class="card-body">
+        <p class="card-category">Heritage Kakanin</p>
+        <h3 class="card-name">Bibingka Royale</h3>
+        <p class="card-desc">Slow-baked rice cake from Bicol coconuts, layered with salted duck egg and kesong puti.</p>
+        <div class="card-footer">
+         
+          <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+        </div>
+      </div>
+      <div class="card-hover-reveal">
+        <p class="reveal-title">Bibingka Royale</p>
+        <p class="reveal-detail">Bicol coconuts · Salted duck egg · Kesong puti · Banana leaf smoked</p>
+        <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
+      </div>
+    </div>
+ 
+    <!-- Card 5 — Wide featured -->
+    <div class="product-card">
+      <div class="card-visual">
+       <img src="mango.jpg" alt="Benguet Honey & Mango Conserve"/>
+        <span class="card-badge badge-dark">Limited</span>
+      </div>
+      <div class="card-body">
+        <p class="card-category">Artisan Preserves</p>
+        <h3 class="card-name">Benguet Honey & Carabao Mango Conserve</h3>
+        <p class="card-desc">Wild-harvested Cordillera honey blended with hand-sliced Philippine Carabao mangoes, slow-set to a jewel-bright preserve of extraordinary depth and warmth.</p>
+        <div class="card-footer">
+          
+          <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+        </div>
+      </div>
+      <div class="card-hover-reveal">
+        <p class="reveal-title">Benguet Honey & Mango Conserve</p>
+        <p class="reveal-detail">Wild Cordillera honey · Carabao mango · Hand-sliced · Slow-set · Limited harvest</p>
+        <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
+      </div>
+    </div>
+ 
+    <!-- Card 6 -->
+    <div class="product-card">
+      <div class="card-visual">
+      <img src="ube.jpg" alt="Ube Halaya Gold"/>
+        <span class="card-badge badge-gold">Seasonal</span>
+      </div>
+      <div class="card-body">
+        <p class="card-category">Seasonal Edition</p>
+        <h3 class="card-name">Ube Halaya Gold</h3>
+        <p class="card-desc">Purple yam slow-cooked with condensed milk and real butter into silken violet confection.</p>
+        <div class="card-footer">
+          
+          <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+        </div>
+      </div>
+      <div class="card-hover-reveal">
+        <p class="reveal-title">Ube Halaya Gold</p>
+        <p class="reveal-detail">Benguet purple yam · Real butter · Condensed milk · Seasonal release only</p>
+        <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <!-- Gift Banner -->
+  <div class="gift-banner">
+    <div class="gift-banner-left">
+      <p class="gift-banner-eyebrow">Exclusive Offering</p>
+      <h3>Bespoke <em>Gift Sets</em><br/>Made for You</h3>
+      <p>Curate a personalized gift box from our full collection — elegantly arranged in our signature gilded boxes with hand-written cards. Perfect for corporate gifting, celebrations, and milestones.</p>
+      <a href="#contact" class="btn-gift" style="margin-top: 32px; display: inline-flex;">
+        Enquire About Gifting →
+      </a>
+    </div>
+    <div class="gift-banner-right">
+      <div class="gift-icon-ring">
+        <span class="gift-icon">🎁</span>
+      </div>
+    </div>
+  </div>
+ 
+</section>
+ 
+<!-- Toast notification -->
+<div class="toast" id="toast">✦ Added to your collection</div>
+<!-- ═══════════════════════════════════════
+     CONTACT SECTION
+═══════════════════════════════════════ -->
+<section id="contact" class="gs-contact">
+  <div class="gs-contact-header">
+    <div class="section-eyebrow">Get in Touch</div>
+    <h2 class="gs-contact-title">We'd Love to <em>Hear from You</em></h2>
+    <p class="gs-contact-subtitle">Whether you're inquiring about a bespoke gift, wholesale order, or simply wish to say hello — our doors are always open.</p>
+  </div>
+
+  <div class="gs-contact-inner">
+    <!-- LEFT INFO PANEL -->
+    <div class="gs-info-panel">
+      <div class="gs-owner-badge">
+        <div class="gs-avatar">BB</div>
+        <div>
+          <div class="gs-owner-name">BillyBilog</div>
+          <div class="gs-owner-title">Founder & Proprietor</div>
+        </div>
+      </div>
+
+      <div class="gs-info-block">
+        <h4>Address</h4>
+        <p>Evangelista Street, Leonila Hill</p>
+        <p>Baguio City, Benguet</p>
+        <p>Philippines 2600</p>
+      </div>
+
+      <div class="gs-info-block">
+        <h4>Contact</h4>
+        <a href="tel:+639XXXXXXXXX">+63 9XX XXX XXXX</a>
+        <a href="mailto:lioneleemn@gmail.com">lioneleemn@gmail.com</a>
+      </div>
+
+      <div class="gs-info-block">
+        <h4>Store Hours</h4>
+        <div class="gs-hours-grid">
+          <span>Mon – Fri</span><span>9:00 AM – 6:00 PM</span>
+          <span>Saturday</span><span>9:00 AM – 5:00 PM</span>
+          <span>Sunday</span><span>10:00 AM – 3:00 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT FORM PANEL -->
+    <div class="gs-form-panel">
+      <form id="contact-form" onsubmit="handleContactSubmit(event)">
+        <div class="gs-form-grid">
+          <div class="gs-field"><label>First Name</label><input type="text" name="firstName" placeholder="María" required /></div>
+          <div class="gs-field"><label>Last Name</label><input type="text" name="lastName" placeholder="Santos" required /></div>
+          <div class="gs-field"><label>Email Address</label><input type="email" name="email" placeholder="you@example.com" required /></div>
+          <div class="gs-field"><label>Phone (optional)</label><input type="tel" name="phone" placeholder="+63 9XX XXX XXXX" /></div>
+          <div class="gs-field gs-form-full">
+            <label>Subject</label>
+            <select name="subject">
+              <option value="">Select an inquiry type…</option>
+              <option>Product Order</option>
+              <option>Bespoke Gift Sets</option>
+              <option>Corporate / Bulk Order</option>
+              <option>Wholesale Partnership</option>
+              <option>General Inquiry</option>
+            </select>
+          </div>
+          <div class="gs-field gs-form-full">
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell us how we can help you…" required></textarea>
+          </div>
+        </div>
+        <div class="gs-form-submit-row">
+          <p class="gs-submit-note">We respond within 24–48 hours, Monday through Saturday.</p>
+          <button type="submit" class="gs-submit-btn">Send Message ✦</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Map strip -->
+  <div class="gs-map-strip">
+    <div class="gs-map-pin">📍</div>
+    <div class="gs-map-text">
+      <h5>Find Us in Baguio City</h5>
+      <p>Evangelista Street, Leonila Hill, Baguio City, Benguet, Philippines</p>
+    </div>
+    <a class="gs-map-link" href="https://maps.google.com/?q=Evangelista+Street+Leonila+Hill+Baguio+City" target="_blank">Open in Maps →</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer class="gs-footer">
+  <div class="gs-footer-grid">
+    <div class="gs-footer-brand">
+      <div class="gs-footer-logo-text">Gintong <em>Sarap</em></div>
+      <div class="gs-footer-tagline">Premium Filipino Heritage Treats</div>
+      <p>Preserving the richness of Filipino flavors, one handcrafted piece at a time. Born in Baguio, loved across the Philippines.</p>
+    </div>
+    <div class="gs-footer-col">
+      <h6>Explore</h6>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">Our Heritage</a></li>
+        <li><a href="#products">Collections</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="gs-footer-col">
+      <h6>Collections</h6>
+      <ul>
+        <li><a href="#products">Kakanin</a></li>
+        <li><a href="#products">Chocolates</a></li>
+        <li><a href="#products">Preserves</a></li>
+        <li><a href="#products">Gift Sets</a></li>
+      </ul>
+    </div>
+    <div class="gs-footer-col">
+      <h6>Stay in the Loop</h6>
+      <p>Be first to know about seasonal releases and limited editions.</p>
+      <div class="gs-newsletter-form">
+        <input type="email" placeholder="Your email address" />
+        <button type="button">Subscribe →</button>
+      </div>
+    </div>
+  </div>
+  <div class="gs-footer-bottom">
+    <p>© 2025 Gintong Sarap. All rights reserved. — BillyBilog, Proprietor</p>
+    <div class="gs-footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Shipping Info</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="gs-toast">✦ Message sent — we'll be in touch soon!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
