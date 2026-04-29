@@ -123,9 +123,9 @@
       <div class="founder-note">
         <span class="quote-mark">"</span>
         <p class="quote-text">
-          Every bite carries the memory of our lola's kitchen — the smoke, the sweetness, the love. We simply gave it the elegance it always deserved.
+          Every bite carries the memory of our lola's kitchen the smoke, the sweetness, the love. We simply gave it the elegance it always deserved.
         </p>
-        <span class="quote-attr">— Marisol Reyes-Santos, Founder</span>
+        <span class="quote-attr"> Marisol Reyes-Santos, Food Critics</span>
       </div>
  
      
@@ -217,149 +217,150 @@
  
   <!-- Filter tabs -->
   <div class="products-filters">
-    <button class="filter-btn active">All</button>
-    <button class="filter-btn">Kakanin</button>
-    <button class="filter-btn">Chocolates</button>
-    <button class="filter-btn">Preserves</button>
-    <button class="filter-btn">Gift Sets</button>
-  </div>
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="kakanin">Kakanin</button>
+  <button class="filter-btn" data-filter="chocolates">Chocolates</button>
+  <button class="filter-btn" data-filter="preserves">Preserves</button>
+  <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+</div>
  
   <!-- Editorial 12-col product grid -->
   <div class="products-grid">
- 
-    <!-- Card 1 — Hero wide card -->
-    <div class="product-card">
-  <div class="card-visual">
-    <img src="cacao.jpg" alt="Cacao de Batangas"/>
-    <span class="card-badge badge-gold">Bestseller</span>
-  </div>
-  <div class="card-body">
-    <p class="card-category">Signature Chocolate</p>
-    <h3 class="card-name">Cacao de Batangas — Gold Reserve</h3>
-    <p class="card-desc">Single-origin Philippine cacao hand-tempered with pandan, salted carabao milk, and a whisper of tablea. Presented in a hand-lacquered collectors' box.</p>
-    <div class="card-footer">
-      <span class="card-price">₱1,250.00</span>
-      <button class="card-btn" onclick="addToCart(this)">
-        Add <span class="card-btn-icon">→</span>
-      </button>
-    </div>
-  </div>
-  <div class="card-hover-reveal">
-    <p class="reveal-title">Cacao de Batangas</p>
-    <p class="reveal-detail">Single-origin · Batangas Province · Small-batch · Hand-tempered · Collector's packaging</p>
-    <p class="reveal-price">₱1,250.00</p>
-    <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="card-visual">
-    <img src="lecheisplan.jpg" alt="Leche Flan Imperial"/>
-    <span class="card-badge badge-dark">Heritage</span>
-  </div>
-  <div class="card-body">
-    <p class="card-category">Heritage Kakanin</p>
-    <h3 class="card-name">Leche Flan Imperial</h3>
-    <p class="card-desc">Rich egg custard crowned with amber caramel, made with free-range eggs and pure carabao milk.</p>
-    <div class="card-footer">
-      <span class="card-price">₱450.00</span>
-      <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+  <div class="product-card" data-category="chocolates">
+    <div class="card-visual">
+      <img src="cacao.jpg" alt="Cacao de Batangas"/>
+      <span class="card-badge badge-gold">Bestseller</span>
+    </div>
+    <div class="card-body">
+      <p class="card-category">Signature Chocolate</p>
+      <h3 class="card-name">Cacao de Batangas — Gold Reserve</h3>
+      <p class="card-desc">Single-origin Philippine cacao hand-tempered with pandan, salted carabao milk, and a whisper of tablea. Presented in a hand-lacquered collectors' box.</p>
+      <div class="card-footer">
+        <span class="card-price">₱1,250.00</span>
+        <button class="card-btn" onclick="addToCart(this)">
+          Add <span class="card-btn-icon">→</span>
+        </button>
+      </div>
+    </div>
+    <div class="card-hover-reveal">
+      <p class="reveal-title">Cacao de Batangas</p>
+      <p class="reveal-detail">Single-origin · Batangas Province · Small-batch · Hand-tempered · Collector's packaging</p>
+      <p class="reveal-price">₱1,250.00</p>
+      <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
     </div>
   </div>
-  <div class="card-hover-reveal">
-    <p class="reveal-title">Leche Flan Imperial</p>
-    <p class="reveal-detail">Carabao milk · Free-range eggs · Amber caramel · Slow-cooked tradition</p>
-    <p class="reveal-price">₱450.00</p>
-    <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="card-visual">
-    <img src="pinat.jpg" alt="Peanut Brittle de Oro"/>
-    <span class="card-badge badge-gold">New</span>
-  </div>
-  <div class="card-body">
-    <p class="card-category">Artisan Confections</p>
-    <h3 class="card-name">Peanut Brittle de Oro</h3>
-    <p class="card-desc">Heirloom peanuts slow-cooked in raw cane sugar, finished with Himalayan pink salt.</p>
-    <div class="card-footer">
-      <span class="card-price">₱385.00</span>
-      <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+  <div class="product-card" data-category="kakanin">
+    <div class="card-visual">
+      <img src="lecheisplan.jpg" alt="Leche Flan Imperial"/>
+      <span class="card-badge badge-dark">Heritage</span>
+    </div>
+    <div class="card-body">
+      <p class="card-category">Heritage Kakanin</p>
+      <h3 class="card-name">Leche Flan Imperial</h3>
+      <p class="card-desc">Rich egg custard crowned with amber caramel, made with free-range eggs and pure carabao milk.</p>
+      <div class="card-footer">
+        <span class="card-price">₱450.00</span>
+        <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+      </div>
+    </div>
+    <div class="card-hover-reveal">
+      <p class="reveal-title">Leche Flan Imperial</p>
+      <p class="reveal-detail">Carabao milk · Free-range eggs · Amber caramel · Slow-cooked tradition</p>
+      <p class="reveal-price">₱450.00</p>
+      <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
     </div>
   </div>
-  <div class="card-hover-reveal">
-    <p class="reveal-title">Peanut Brittle de Oro</p>
-    <p class="reveal-detail">Pangasinan peanuts · Raw cane sugar · Pink salt finish · Heritage tin</p>
-    <p class="reveal-price">₱385.00</p>
-    <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="card-visual">
-    <img src="bibingks.jpg" alt="Bibingka Royale"/>
-    <span class="card-badge badge-dark">Bestseller</span>
-  </div>
-  <div class="card-body">
-    <p class="card-category">Heritage Kakanin</p>
-    <h3 class="card-name">Bibingka Royale</h3>
-    <p class="card-desc">Slow-baked rice cake from Bicol coconuts, layered with salted duck egg and kesong puti.</p>
-    <div class="card-footer">
-      <span class="card-price">₱520.00</span>
-      <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+  <div class="product-card" data-category="chocolates">
+    <div class="card-visual">
+      <img src="pinat.jpg" alt="Peanut Brittle de Oro"/>
+      <span class="card-badge badge-gold">New</span>
+    </div>
+    <div class="card-body">
+      <p class="card-category">Artisan Confections</p>
+      <h3 class="card-name">Peanut Brittle de Oro</h3>
+      <p class="card-desc">Heirloom peanuts slow-cooked in raw cane sugar, finished with Himalayan pink salt.</p>
+      <div class="card-footer">
+        <span class="card-price">₱385.00</span>
+        <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+      </div>
+    </div>
+    <div class="card-hover-reveal">
+      <p class="reveal-title">Peanut Brittle de Oro</p>
+      <p class="reveal-detail">Pangasinan peanuts · Raw cane sugar · Pink salt finish · Heritage tin</p>
+      <p class="reveal-price">₱385.00</p>
+      <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
     </div>
   </div>
-  <div class="card-hover-reveal">
-    <p class="reveal-title">Bibingka Royale</p>
-    <p class="reveal-detail">Bicol coconuts · Salted duck egg · Kesong puti · Banana leaf smoked</p>
-    <p class="reveal-price">₱520.00</p>
-    <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="card-visual">
-    <img src="mango.jpg" alt="Benguet Honey & Mango Conserve"/>
-    <span class="card-badge badge-dark">Limited</span>
-  </div>
-  <div class="card-body">
-    <p class="card-category">Artisan Preserves</p>
-    <h3 class="card-name">Benguet Honey & Carabao Mango Conserve</h3>
-    <p class="card-desc">Wild-harvested Cordillera honey blended with hand-sliced Philippine Carabao mangoes, slow-set to a jewel-bright preserve.</p>
-    <div class="card-footer">
-      <span class="card-price">₱890.00</span>
-      <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+  <div class="product-card" data-category="kakanin">
+    <div class="card-visual">
+      <img src="bibingks.jpg" alt="Bibingka Royale"/>
+      <span class="card-badge badge-dark">Bestseller</span>
+    </div>
+    <div class="card-body">
+      <p class="card-category">Heritage Kakanin</p>
+      <h3 class="card-name">Bibingka Royale</h3>
+      <p class="card-desc">Slow-baked rice cake from Bicol coconuts, layered with salted duck egg and kesong puti.</p>
+      <div class="card-footer">
+        <span class="card-price">₱520.00</span>
+        <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+      </div>
+    </div>
+    <div class="card-hover-reveal">
+      <p class="reveal-title">Bibingka Royale</p>
+      <p class="reveal-detail">Bicol coconuts · Salted duck egg · Kesong puti · Banana leaf smoked</p>
+      <p class="reveal-price">₱520.00</p>
+      <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
     </div>
   </div>
-  <div class="card-hover-reveal">
-    <p class="reveal-title">Benguet Honey & Mango</p>
-    <p class="reveal-detail">Wild Cordillera honey · Carabao mango · Hand-sliced · Limited harvest</p>
-    <p class="reveal-price">₱890.00</p>
-    <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="card-visual">
-    <img src="ube.jpg" alt="Ube Halaya Gold"/>
-    <span class="card-badge badge-gold">Seasonal</span>
-  </div>
-  <div class="card-body">
-    <p class="card-category">Seasonal Edition</p>
-    <h3 class="card-name">Ube Halaya Gold</h3>
-    <p class="card-desc">Purple yam slow-cooked with condensed milk and real butter into silken violet confection.</p>
-    <div class="card-footer">
-      <span class="card-price">₱650.00</span>
-      <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+  <div class="product-card" data-category="preserves">
+    <div class="card-visual">
+      <img src="mango.jpg" alt="Benguet Honey & Mango Conserve"/>
+      <span class="card-badge badge-dark">Limited</span>
+    </div>
+    <div class="card-body">
+      <p class="card-category">Artisan Preserves</p>
+      <h3 class="card-name">Benguet Honey & Carabao Mango Conserve</h3>
+      <p class="card-desc">Wild-harvested Cordillera honey blended with hand-sliced Philippine Carabao mangoes, slow-set to a jewel-bright preserve.</p>
+      <div class="card-footer">
+        <span class="card-price">₱890.00</span>
+        <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+      </div>
+    </div>
+    <div class="card-hover-reveal">
+      <p class="reveal-title">Benguet Honey & Mango</p>
+      <p class="reveal-detail">Wild Cordillera honey · Carabao mango · Hand-sliced · Limited harvest</p>
+      <p class="reveal-price">₱890.00</p>
+      <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
     </div>
   </div>
-  <div class="card-hover-reveal">
-    <p class="reveal-title">Ube Halaya Gold</p>
-    <p class="reveal-detail">Benguet purple yam · Real butter · Condensed milk · Seasonal release</p>
-    <p class="reveal-price">₱650.00</p>
-    <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
+
+  <div class="product-card" data-category="kakanin">
+    <div class="card-visual">
+      <img src="ube.jpg" alt="Ube Halaya Gold"/>
+      <span class="card-badge badge-gold">Seasonal</span>
+    </div>
+    <div class="card-body">
+      <p class="card-category">Seasonal Edition</p>
+      <h3 class="card-name">Ube Halaya Gold</h3>
+      <p class="card-desc">Purple yam slow-cooked with condensed milk and real butter into silken violet confection.</p>
+      <div class="card-footer">
+        <span class="card-price">₱650.00</span>
+        <button class="card-btn" onclick="addToCart(this)">Add <span class="card-btn-icon">→</span></button>
+      </div>
+    </div>
+    <div class="card-hover-reveal">
+      <p class="reveal-title">Ube Halaya Gold</p>
+      <p class="reveal-detail">Benguet purple yam · Real butter · Condensed milk · Seasonal release</p>
+      <p class="reveal-price">₱650.00</p>
+      <button class="reveal-btn" onclick="addToCart(this)">Add to Collection</button>
+    </div>
   </div>
+
 </div>
  
   </div>

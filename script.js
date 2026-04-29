@@ -70,3 +70,32 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   toast.classList.add('show');
   setTimeout(() => toast.classList.remove('show'), 4000);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const productCards = document.querySelectorAll('.product-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // 1. Remove 'active' class from all buttons and add to the clicked one
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const filterValue = button.getAttribute('data-filter');
+
+      // 2. Filter the cards
+      productCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+
+        if (filterValue === 'all' || filterValue === cardCategory) {
+          card.style.display = 'block';
+          // Optional: Add a small fade-in animation
+          card.style.opacity = '0';
+          setTimeout(() => { card.style.opacity = '1'; }, 10);
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
